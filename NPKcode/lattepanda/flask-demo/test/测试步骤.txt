@@ -1,0 +1,1 @@
+打开idle，加载test.py文件，并运行。在浏览器输入：http://127.0.0.1:5000/helloworld。网页显示helloworld则正常运行。

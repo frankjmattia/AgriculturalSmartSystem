@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>上师大农业基地</title>
+ 
+</head>
+
+<body style="text-align:center;">
+  <input id="route_funca" onclick="btn1()" style="font-size:20px" type="button" value="大棚生菜">
+  <input id="route_funcb" onclick="btn2()" style="font-size:20px" type="button" value="土培生菜"> 
+  <input id="route_funcc" onclick="btn3()" style="font-size:20px" type="button" value="大棚菌菇">
+  <input id="route_funcd" onclick="btn4()" style="font-size:20px" type="button" value="暗室菌菇">
+  <input id="route_funce" onclick="btn5()" style="font-size:20px" type="button" value="室外生菜">
+  <input id="route_funcf" onclick="btn6()" style="font-size:20px" type="button" value="气象站">
+  <input id="route_funcg" onclick="btn7()" style="font-size:20px" type="button" value="所有数据">
+  <br>
+  <iframe id="ttt" src="http://127.0.0.1:8080/topics" frameborder="0" style="width:1300px;height: 1000px;"></iframe>
+  <script>
+    function btn1(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics?search=节点1")
+        console.log("btn1")
+    }
+    function btn2(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics?search=节点2")
+    }
+    function btn3(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics?search=节点3")
+        console.log("btn1")
+    }
+    function btn4(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics?search=节点4")
+    }
+    function btn5(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics?search=节点5")
+        console.log("btn1")
+    }
+    function btn6(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics?search=气象站")
+    }
+    function btn7(){
+        document.querySelector("#ttt").setAttribute("src","http://10.168.1.100:8080/topics")
+    }
+  </script>
+</body>
+
+</html>
